@@ -1,0 +1,64 @@
+{
+  "title": "LevisLv",
+  "author": "LevisLv",
+  "description": "个人电子书",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "structure": {
+    "readme": "README.md"
+  },
+  "links": {
+    "sidebar": {
+      "我的主页": "https://www.levislv.com/"
+    }
+  },
+  "plugins": [
+    "-lunr",
+    "-search",
+    "search-plus",
+    "-sharing",
+    "sharing-plus",
+    "anchors",
+    "back-to-top-button",
+    "click-reveal",
+    "custom-favicon",
+    "code",
+    "expandable-chapters",
+    "github",
+    "hide-element",
+    "lightbox",
+    "multipart",
+    "page-treeview",
+    "pageview-count",
+    "popup",
+    "splitter"
+  ],
+  "pluginsConfig": {
+    "sharing": {
+      "all": [
+        "douban",
+        "facebook",
+        "google",
+        "instapaper",
+        "linkedin",
+        "twitter",
+        "weibo",
+        "messenger",
+        "qq",
+        "qzone",
+        "viber",
+        "whatsapp"
+      ]
+    },
+    "favicon": "static/img/favicon.ico",
+    "code": {
+      "copyButtons": true
+    },
+    "github": {
+      "url": "https://github.com/LevisLv/"
+    },
+    "hide-element": {
+      "elements": [".gitbook-link"]
+    }
+  }
+}
