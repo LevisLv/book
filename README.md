@@ -1,4 +1,4 @@
-# Introduction
+# 欢迎来访，留个脚印吧~
 
 <div id="gitalk-container"></div>
 
