@@ -2,6 +2,7 @@
 ---
 
 JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<font color="red"><code>&lt;head&gt;</code></font>中：
+
 ```
 <html>
 <head>
@@ -14,9 +15,11 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 </body>
 </html>
 ```
+
 由<font color="red"><code>&lt;script&gt;...&lt;/script&gt;</code></font>包含的代码就是JavaScript代码，它将直接被浏览器执行。
 
 第二种方法是把JavaScript代码放到一个单独的<font color="red"><code>.js</code></font>文件，然后在HTML中通过<font color="red"><code>&lt;script src="..."&gt;&lt;/script&gt;</code></font>引入这个文件：
+
 ```
 <html>
 <head>
@@ -27,6 +30,7 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 </body>
 </html>
 ```
+
 这样，<font color="red"><code>/static/js/abc.js</code></font>就会被浏览器执行。
 
 把JavaScript代码放入一个单独的<font color="red"><code>.js</code></font>文件中更利于维护代码，并且多个页面可以各自引用同一份<font color="red"><code>.js</code></font>文件。
@@ -34,11 +38,13 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 可以在同一个页面中引入多个<font color="red"><code>.js</code></font>文件，还可以在页面中多次编写<font color="red"><code>&lt;script&gt; js代码... &lt;/script&gt;</code></font>，浏览器按照顺序依次执行。
 
 有些时候你会看到<font color="red"><code>&lt;script&gt;</code></font>标签还设置了一个<font color="red"><code>type</code></font>属性：
+
 ```
 <script type="text/javascript">
   ...
 </script>
 ```
+
 但这是没有必要的，因为默认的type就是JavaScript，所以不必显式地把type指定为JavaScript。
 
 ### 如何编写JavaScript
