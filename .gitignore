@@ -1,7 +1,9 @@
 .idea
 
+_book
+
 node_modules
 
-_book
+package-lock.json
 
 test.html
