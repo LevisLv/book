@@ -1,0 +1,21 @@
+p.consoleLog {
+    background-color: #EBF7FD;
+    border: 1px solid #B2CEDD;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+p.consoleError {
+    background-color: #FFF1F0;
+    border: 1px solid #F3C0B6;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+label.consoleLog {
+    color: #2D7091;
+}
+
+label.consoleError {
+    color: #D85030;
+}

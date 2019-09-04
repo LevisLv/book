@@ -1,0 +1,395 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JavaScript简介 · LevisLv</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="LevisLv">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../快速入门/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.levislv.com/" target="_blank" class="custom-link">我的主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    JavaScript学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    JavaScript简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../快速入门/">
+            
+                <a href="../快速入门/">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../快速入门/数据类型和变量/">
+            
+                <a href="../快速入门/数据类型和变量/">
+            
+                    
+                    数据类型和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >JavaScript简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="javascript&#x7B80;&#x4ECB;"><a name="javascript&#x7B80;&#x4ECB;" class="plugin-anchor" href="#javascript&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>JavaScript&#x7B80;&#x4ECB;</h1>
+<hr>
+<h3 id="javascript&#x5386;&#x53F2;"><a name="javascript&#x5386;&#x53F2;" class="plugin-anchor" href="#javascript&#x5386;&#x53F2;"><i class="fa fa-link" aria-hidden="true"></i></a>JavaScript&#x5386;&#x53F2;</h3>
+<p>&#x8981;&#x4E86;&#x89E3;JavaScript&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8981;&#x56DE;&#x987E;&#x4E00;&#x4E0B;JavaScript&#x7684;&#x8BDE;&#x751F;&#x3002;</p>
+<p>&#x5728;&#x4E0A;&#x4E2A;&#x4E16;&#x7EAA;&#x7684;1995&#x5E74;&#xFF0C;&#x5F53;&#x65F6;&#x7684;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x6B63;&#x51ED;&#x501F;&#x5176;Navigator&#x6D4F;&#x89C8;&#x5668;&#x6210;&#x4E3A;Web&#x65F6;&#x4EE3;&#x5F00;&#x542F;&#x65F6;&#x6700;&#x8457;&#x540D;&#x7684;&#x7B2C;&#x4E00;&#x4EE3;&#x4E92;&#x8054;&#x7F51;&#x516C;&#x53F8;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x5E0C;&#x671B;&#x80FD;&#x5728;&#x9759;&#x6001;HTML&#x9875;&#x9762;&#x4E0A;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x52A8;&#x6001;&#x6548;&#x679C;&#xFF0C;&#x4E8E;&#x662F;&#x53EB;Brendan Eich&#x8FD9;&#x54E5;&#x4EEC;&#x5728;&#x4E24;&#x5468;&#x4E4B;&#x5185;&#x8BBE;&#x8BA1;&#x51FA;&#x4E86;JavaScript&#x8BED;&#x8A00;&#x3002;&#x4F60;&#x6CA1;&#x770B;&#x9519;&#xFF0C;&#x8FD9;&#x54E5;&#x4EEC;&#x53EA;&#x7528;&#x4E86;10&#x5929;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8D77;&#x540D;&#x53EB;JavaScript&#xFF1F;&#x539F;&#x56E0;&#x662F;&#x5F53;&#x65F6;Java&#x8BED;&#x8A00;&#x975E;&#x5E38;&#x7EA2;&#x706B;&#xFF0C;&#x6240;&#x4EE5;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x5E0C;&#x671B;&#x501F;Java&#x7684;&#x540D;&#x6C14;&#x6765;&#x63A8;&#x5E7F;&#xFF0C;&#x4F46;&#x4E8B;&#x5B9E;&#x4E0A;JavaScript&#x9664;&#x4E86;&#x8BED;&#x6CD5;&#x4E0A;&#x6709;&#x70B9;&#x50CF;Java&#xFF0C;&#x5176;&#x4ED6;&#x90E8;&#x5206;&#x57FA;&#x672C;&#x4E0A;&#x6CA1;&#x5565;&#x5173;&#x7CFB;&#x3002;</p>
+<h3 id="ecmascript"><a name="ecmascript" class="plugin-anchor" href="#ecmascript"><i class="fa fa-link" aria-hidden="true"></i></a>ECMAScript</h3>
+<p>&#x56E0;&#x4E3A;&#x7F51;&#x666F;&#x5F00;&#x53D1;&#x4E86;JavaScript&#xFF0C;&#x4E00;&#x5E74;&#x540E;&#x5FAE;&#x8F6F;&#x53C8;&#x6A21;&#x4EFF;JavaScript&#x5F00;&#x53D1;&#x4E86;JScript&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;JavaScript&#x6210;&#x4E3A;&#x5168;&#x7403;&#x6807;&#x51C6;&#xFF0C;&#x51E0;&#x4E2A;&#x516C;&#x53F8;&#x8054;&#x5408;ECMA&#xFF08;European Computer Manufacturers Association&#xFF09;&#x7EC4;&#x7EC7;&#x5B9A;&#x5236;&#x4E86;JavaScript&#x8BED;&#x8A00;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x88AB;&#x79F0;&#x4E3A;ECMAScript&#x6807;&#x51C6;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x7B80;&#x5355;&#x8BF4;&#x6765;&#x5C31;&#x662F;&#xFF0C;ECMAScript&#x662F;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#xFF0C;&#x800C;JavaScript&#x662F;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x5BF9;ECMAScript&#x6807;&#x51C6;&#x7684;&#x4E00;&#x79CD;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x90A3;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x76F4;&#x63A5;&#x628A;JavaScript&#x5B9A;&#x4E3A;&#x6807;&#x51C6;&#x5462;&#xFF1F;&#x56E0;&#x4E3A;JavaScript&#x662F;&#x7F51;&#x666F;&#x7684;&#x6CE8;&#x518C;&#x5546;&#x6807;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x5927;&#x591A;&#x6570;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x7528;JavaScript&#x8FD9;&#x4E2A;&#x8BCD;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9047;&#x5230;ECMAScript&#x8FD9;&#x4E2A;&#x8BCD;&#xFF0C;&#x7B80;&#x5355;&#x628A;&#x5B83;&#x66FF;&#x6362;&#x4E3A;JavaScript&#x5C31;&#x884C;&#x4E86;&#x3002;</p>
+<h3 id="javascript&#x7248;&#x672C;"><a name="javascript&#x7248;&#x672C;" class="plugin-anchor" href="#javascript&#x7248;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>JavaScript&#x7248;&#x672C;</h3>
+<p>JavaScript&#x8BED;&#x8A00;&#x662F;&#x5728;10&#x5929;&#x65F6;&#x95F4;&#x5185;&#x8BBE;&#x8BA1;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x867D;&#x7136;&#x8BED;&#x8A00;&#x7684;&#x8BBE;&#x8BA1;&#x8005;&#x6C34;&#x5E73;&#x975E;&#x5E38;NB&#xFF0C;&#x4F46;&#x8C01;&#x4E5F;&#x67B6;&#x4E0D;&#x4F4F;&#x201C;&#x65F6;&#x95F4;&#x7D27;&#xFF0C;&#x4EFB;&#x52A1;&#x91CD;&#x201D;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;JavaScript&#x6709;&#x5F88;&#x591A;&#x8BBE;&#x8BA1;&#x7F3A;&#x9677;&#xFF0C;&#x6211;&#x4EEC;&#x540E;&#x9762;&#x4F1A;&#x6162;&#x6162;&#x8BB2;&#x5230;&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;&#x7531;&#x4E8E;JavaScript&#x7684;&#x6807;&#x51C6;&#x2014;&#x2014;ECMAScript&#x5728;&#x4E0D;&#x65AD;&#x53D1;&#x5C55;&#xFF0C;&#x6700;&#x65B0;&#x7248;ECMAScript 6&#x6807;&#x51C6;&#xFF08;&#x7B80;&#x79F0;ES6&#xFF09;&#x5DF2;&#x7ECF;&#x5728;2015&#x5E74;6&#x6708;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#xFF0C;&#x8BB2;&#x5230;JavaScript&#x7684;&#x7248;&#x672C;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8BF4;&#x5B83;&#x5B9E;&#x73B0;&#x4E86;ECMAScript&#x6807;&#x51C6;&#x7684;&#x54EA;&#x4E2A;&#x7248;&#x672C;&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x53D1;&#x5E03;&#x65F6;&#x5C31;&#x786E;&#x5B9A;&#x4E86;JavaScript&#x7684;&#x7248;&#x672C;&#xFF0C;&#x52A0;&#x4E0A;&#x5F88;&#x591A;&#x7528;&#x6237;&#x8FD8;&#x5728;&#x4F7F;&#x7528;IE6&#x8FD9;&#x79CD;&#x53E4;&#x8001;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x8FD9;&#x5C31;&#x5BFC;&#x81F4;&#x4F60;&#x5728;&#x5199;JavaScript&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8981;&#x7167;&#x987E;&#x4E00;&#x4E0B;&#x8001;&#x7528;&#x6237;&#xFF0C;&#x4E0D;&#x80FD;&#x4E00;&#x4E0A;&#x6765;&#x5C31;&#x7528;&#x6700;&#x65B0;&#x7684;ES6&#x6807;&#x51C6;&#x5199;&#xFF0C;&#x5426;&#x5219;&#xFF0C;&#x8001;&#x7528;&#x6237;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x662F;&#x65E0;&#x6CD5;&#x8FD0;&#x884C;&#x65B0;&#x7248;&#x672C;&#x7684;JavaScript&#x4EE3;&#x7801;&#x7684;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#xFF0C;JavaScript&#x7684;&#x6838;&#x5FC3;&#x8BED;&#x6CD5;&#x5E76;&#x6CA1;&#x6709;&#x591A;&#x5927;&#x53D8;&#x5316;&#x3002;&#x6211;&#x4EEC;&#x7684;&#x6559;&#x7A0B;&#x4F1A;&#x5148;&#x8BB2;JavaScript&#x6700;&#x6838;&#x5FC3;&#x7684;&#x7528;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#xFF0C;&#x9488;&#x5BF9;ES6&#x8BB2;&#x89E3;&#x65B0;&#x589E;&#x7279;&#x6027;&#x3002;</p>
+</body></html>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: JavaScript学习笔记">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../快速入门/" class="navigation navigation-next " aria-label="Next page: 快速入门">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JavaScript简介","level":"2.1.1","depth":2,"next":{"title":"快速入门","level":"2.1.2","depth":2,"path":"JavaScript学习笔记/快速入门/README.md","ref":"JavaScript学习笔记/快速入门/README.md","articles":[{"title":"数据类型和变量","level":"2.1.2.1","depth":3,"path":"JavaScript学习笔记/快速入门/数据类型和变量/README.md","ref":"JavaScript学习笔记/快速入门/数据类型和变量/README.md","articles":[]}]},"previous":{"title":"JavaScript学习笔记","level":"2.1","depth":1,"path":"JavaScript学习笔记/README.md","ref":"JavaScript学习笔记/README.md","articles":[{"title":"JavaScript简介","level":"2.1.1","depth":2,"path":"JavaScript学习笔记/JavaScript简介/README.md","ref":"JavaScript学习笔记/JavaScript简介/README.md","articles":[]},{"title":"快速入门","level":"2.1.2","depth":2,"path":"JavaScript学习笔记/快速入门/README.md","ref":"JavaScript学习笔记/快速入门/README.md","articles":[{"title":"数据类型和变量","level":"2.1.2.1","depth":3,"path":"JavaScript学习笔记/快速入门/数据类型和变量/README.md","ref":"JavaScript学习笔记/快速入门/数据类型和变量/README.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/JavaScript简介/README.md","mtime":"2019-09-04T01:34:31.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-04T06:08:37.723Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
