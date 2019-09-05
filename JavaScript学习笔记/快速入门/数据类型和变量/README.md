@@ -10,7 +10,7 @@
 #### Number
 JavaScript不区分整数和浮点数，统一用Number表示，以下都是合法的Number类型：
 
-```
+```javascript
 123; // 整数123
 0.456; // 浮点数0.456
 1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5
@@ -23,7 +23,7 @@ Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所�
 
 Number可以直接做四则运算，规则和数学一致：
 
-```
+```javascript
 1 + 2; // 3
 (1 + 2) * 5 / 2; // 7.5
 2 / 0; // Infinity
@@ -40,7 +40,7 @@ Number可以直接做四则运算，规则和数学一致：
 #### 布尔值
 布尔值和布尔代数的表示完全一致，一个布尔值只有<font color="red"><code>true</code></font>、<font color="red"><code>false</code></font>两种值，要么是<font color="red"><code>true</code></font>，要么是<font color="red"><code>false</code></font>，可以直接用<font color="red"><code>true</code></font>、<font color="red"><code>false</code></font>表示布尔值，也可以通过布尔运算计算出来：
 
-```
+```javascript
 true; // 这是一个true值
 false; // 这是一个false值
 2 > 1; // 这是一个true值
@@ -49,7 +49,7 @@ false; // 这是一个false值
 
 <font color="red"><code>&&</code></font>运算是与运算，只有所有都为<font color="red"><code>true</code></font>，<font color="red"><code>&&</code></font>运算结果才是<font color="red"><code>true</code></font>：
 
-```
+```javascript
 true && true; // 这个&&语句计算结果为true
 true && false; // 这个&&语句计算结果为false
 false && true && false; // 这个&&语句计算结果为false
@@ -57,7 +57,7 @@ false && true && false; // 这个&&语句计算结果为false
 
 <font color="red"><code>||</code></font>运算是或运算，只要其中有一个为<font color="red"><code>true</code></font>，<font color="red"><code>||</code></font>运算结果就是<font color="red"><code>true</code></font>：
 
-```
+```javascript
 false || false; // 这个||语句计算结果为false
 true || false; // 这个||语句计算结果为true
 false || true || false; // 这个||语句计算结果为true
@@ -65,7 +65,7 @@ false || true || false; // 这个||语句计算结果为true
 
 <font color="red"><code>!</code></font>运算是非运算，它是一个单目运算符，把<font color="red"><code>true</code></font>变成<font color="red"><code>false</code></font>，<font color="red"><code>false</code></font>变成<font color="red"><code>true</code></font>：
 
-```
+```javascript
 ! true; // 结果为false
 ! false; // 结果为true
 ! (2 > 5); // 结果为true
@@ -73,7 +73,7 @@ false || true || false; // 这个||语句计算结果为true
 
 布尔值经常用在条件判断中，比如：
 
-```
+```javascript
 var age = 15;
 if (age >= 18) {
     alert('adult');
@@ -85,7 +85,7 @@ if (age >= 18) {
 #### 比较运算符
 当我们对Number做比较时，可以通过比较运算符得到一个布尔值：
 
-```
+```javascript
 2 > 5; // false
 5 >= 2; // true
 7 == 7; // true
@@ -93,7 +93,7 @@ if (age >= 18) {
 
 实际上，JavaScript允许对任意数据类型做比较：
 
-```
+```javascript
 false == 0; // true
 false === 0; // false
 ```
@@ -108,25 +108,25 @@ false === 0; // false
 
 另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：
 
-```
+```javascript
 NaN === NaN; // false
 ```
 
 唯一能判断<font color="red"><code>NaN</code></font>的方法是通过<font color="red"><code>isNaN()</code></font>函数：
 
-```
+```javascript
 isNaN(NaN); // true
 ```
 
 最后要注意浮点数的相等比较：
 
-```
+```javascript
 1 / 3 === (1 - 2 / 3); // false
 ```
 
 这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：
 
-```
+```javascript
 Math.abs(1 / 3 - (1 - 2 / 3)) < 0.0000001; // true
 ```
 
@@ -140,7 +140,7 @@ JavaScript的设计者希望用<font color="red"><code>null</code></font>表示�
 #### 数组
 数组是一组按顺序排列的集合，集合的每个值称为元素。JavaScript的数组可以包括任意数据类型。例如：
 
-```
+```javascript
 [1, 2, 3.14, 'Hello', null, true];
 ```
 
@@ -148,7 +148,7 @@ JavaScript的设计者希望用<font color="red"><code>null</code></font>表示�
 
 另一种创建数组的方法是通过<font color="red"><code>Array()</code></font>函数实现：
 
-```
+```javascript
 new Array(1, 2, 3); // 创建了数组[1, 2, 3]
 ```
 
@@ -156,7 +156,7 @@ new Array(1, 2, 3); // 创建了数组[1, 2, 3]
 
 数组的元素可以通过索引来访问。请注意，索引的起始值为<font color="red"><code>0</code></font>：
 
-```
+```javascript
 var arr = [1, 2, 3.14, 'Hello', null, true];
 arr[0]; // 返回索引为0的元素，即1
 arr[5]; // 返回索引为5的元素，即true
@@ -166,7 +166,7 @@ arr[6]; // 索引超出了范围，返回undefined
 #### 对象
 JavaScript的对象是一组由键-值组成的无序集合，例如：
 
-```
+```javascript
 var person = {
     name: 'Bob',
     age: 20,
@@ -181,7 +181,7 @@ JavaScript对象的键都是字符串类型，值可以是任意数据类型。�
 
 要获取一个对象的属性，我们用<font color="red"><code>对象变量.属性名</code></font>的方式：
 
-```
+```javascript
 person.name; // 'Bob'
 person.zipcode; // null
 ```
@@ -191,7 +191,7 @@ person.zipcode; // null
 
 变量在JavaScript中就是用一个变量名表示，变量名是大小写英文、数字、<font color="red"><code>$</code></font>和<font color="red"><code>_</code></font>的组合，且不能用数字开头。变量名也不能是JavaScript的关键字，如<font color="red"><code>if</code></font>、<font color="red"><code>while</code></font>等。申明一个变量用<font color="red"><code>var</code></font>语句，比如：
 
-```
+```javascript
 var a; // 申明了变量a，此时a的值为undefined
 var $b = 1; // 申明了变量$b，同时给$b赋值，此时$b的值为1
 var s_007 = '007'; // s_007是一个字符串
@@ -203,14 +203,14 @@ var t = null; // t的值是null
 
 在JavaScript中，使用等号=对变量进行赋值。可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，但是要注意只能用<font color="red"><code>var</code></font>申明一次，例如：
 
-```
+```javascript
 var a = 123; // a的值是整数123
 a = 'ABC'; // a变为字符串
 ```
 
 这种变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。例如Java是静态语言，赋值语句如下：
 
-```
+```javascript
 int a = 123; // a是整数类型变量，类型用int申明
 a = "ABC"; // 错误：不能把字符串赋给整型变量
 ```
@@ -219,7 +219,7 @@ a = "ABC"; // 错误：不能把字符串赋给整型变量
 
 请不要把赋值语句的等号等同于数学的等号。比如下面的代码：
 
-```
+```javascript
 var x = 10;
 x = x + 2;
 ```
@@ -228,7 +228,7 @@ x = x + 2;
 
 要显示变量的内容，可以用<font color="red"><code>console.log(x)</code></font>，打开Chrome的控制台就可以看到结果。
 
-```
+```javascript
 // 打印变量x
 var x = 100;
 console.log(x);
@@ -258,7 +258,7 @@ console.log(x);
 ### strict模式
 JavaScript在设计之初，为了方便初学者学习，并不强制要求用<font color="red"><code>var</code></font>申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过<font color="red"><code>var</code></font>申明就被使用，那么该变量就自动被申明为全局变量：
 
-```
+```javascript
 i = 10; // i现在是全局变量
 ```
 
@@ -270,7 +270,7 @@ i = 10; // i现在是全局变量
 
 启用strict模式的方法是在JavaScript代码的第一行写上：
 
-```
+```javascript
 'use strict';
 ```
 
@@ -278,7 +278,7 @@ i = 10; // i现在是全局变量
 
 来测试一下你的浏览器是否能支持strict模式：
 
-```
+```javascript
 'use strict';
 // 如果浏览器支持strict模式，
 // 下面的代码将报ReferenceError错误:
