@@ -3,7 +3,7 @@
 
 JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都把JavaScript代码放到<font color="red"><code>&lt;head&gt;</code></font>中：
 
-```
+```html
 <html>
 <head>
   <script>
@@ -20,7 +20,7 @@ JavaScript代码可以直接嵌在网页的任何地方，不过通常我们都�
 
 第二种方法是把JavaScript代码放到一个单独的<font color="red"><code>.js</code></font>文件，然后在HTML中通过<font color="red"><code>&lt;script src="..."&gt;&lt;/script&gt;</code></font>引入这个文件：
 
-```
+```html
 <html>
 <head>
   <script src="/static/js/abc.js"></script>
