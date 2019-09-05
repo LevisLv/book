@@ -10,3 +10,4 @@
         * [数据类型和变量](JavaScript学习笔记/快速入门/数据类型和变量/README.md)
         * [字符串](JavaScript学习笔记/快速入门/字符串/README.md)
         * [数组](JavaScript学习笔记/快速入门/数组/README.md)
+        * [对象](JavaScript学习笔记/快速入门/对象/README.md)
