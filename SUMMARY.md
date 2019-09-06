@@ -11,3 +11,4 @@
         * [字符串](JavaScript学习笔记/快速入门/字符串/README.md)
         * [数组](JavaScript学习笔记/快速入门/数组/README.md)
         * [对象](JavaScript学习笔记/快速入门/对象/README.md)
+        * [循环](JavaScript学习笔记/快速入门/循环/README.md)
