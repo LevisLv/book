@@ -15,3 +15,4 @@
         * [循环](JavaScript学习笔记/快速入门/循环/README.md)
         * [Map和Set](JavaScript学习笔记/快速入门/Map和Set/README.md)
         * [Iterable](JavaScript学习笔记/快速入门/Iterable/README.md)
+    * [函数](JavaScript学习笔记/函数/README.md)
