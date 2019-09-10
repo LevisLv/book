@@ -196,7 +196,8 @@ console.log(x); // x应该为500
 `;
     alert(answer);
 })();">Show Answer</button>
- 
+### 
+
 ### 小结
 <font color="red"><code>Array</code></font>提供了一种顺序存储一组元素的功能，并可以按索引来读写。
 
@@ -215,3 +216,4 @@ var arr = ['小明', '小红', '大军', '阿黄'];
 console.log(\`欢迎\${arr.sort().slice(0, arr.length - 1).join('，')}和\${arr.slice(arr.length - 1)}同学\`);`;
     alert(answer);
 })();">Show Answer</button>
+### 
