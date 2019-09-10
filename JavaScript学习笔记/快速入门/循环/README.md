@@ -67,8 +67,8 @@ else {
 `;
     alert(answer);
 })();">Show Answer</button>
-
 ### 
+
 <font color="red"><code>for</code></font>循环最常用的地方是利用索引来遍历数组：
 
 ```javascript
@@ -201,7 +201,8 @@ while (j < arr.sort().reverse().length) {
 `;
     alert(answer);
 })();">Show Answer</button>
- 
+### 
+
 ### 小结
 循环是让计算机做重复任务的有效的方法，有些时候，如果代码写得有问题，会让程序陷入“死循环”，也就是永远循环下去。JavaScript的死循环会让浏览器无法正常显示或执行当前页面的逻辑，有的浏览器会直接挂掉，有的浏览器会在一段时间后提示你强行终止JavaScript的执行，因此，要特别注意死循环的问题。
 
