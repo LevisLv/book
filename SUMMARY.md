@@ -17,3 +17,4 @@
         * [Iterable](JavaScript学习笔记/快速入门/Iterable/README.md)
     * [函数](JavaScript学习笔记/函数/README.md)
         * [函数定义和调用](JavaScript学习笔记/函数/函数定义和调用/README.md)
+        * [变量作用域与解构赋值](JavaScript学习笔记/函数/变量作用域与解构赋值/README.md)
