@@ -5,3 +5,11 @@ button.run {
     color: white;
     padding: 5px 15px;
 }
+
+button.analyze {
+    background-color: #8CC14C;
+    border: 1px solid #84B647;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 15px;
+}
