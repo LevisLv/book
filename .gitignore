@@ -7,3 +7,5 @@ node_modules
 package-lock.json
 
 test.html
+
+test.js
