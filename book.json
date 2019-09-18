@@ -33,6 +33,11 @@
     "splitter"
   ],
   "pluginsConfig": {
+    "fontsettings": {
+      "size": 2,
+      "family": "sans",
+      "theme": "night"
+    },
     "sharing": {
       "all": [
         "douban",
