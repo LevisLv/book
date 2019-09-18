@@ -39,7 +39,7 @@ console.log(x);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('higherOrderFunction');
+    const element = document.querySelector('p#higherOrderFunction');
     try {
         'use strict';
         function add(x, y, f) {
@@ -50,7 +50,7 @@ console.log(x);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${x}</label>`;
+        element.innerHTML = `<label class='consoleLog'>11</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

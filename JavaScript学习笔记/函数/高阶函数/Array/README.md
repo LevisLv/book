@@ -37,7 +37,7 @@ console.log(arr.every(function (s) {
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${arr.every(function (s) {return s.length > 0;})}<br>${arr.every(function (s) {return s.toLowerCase() === s;})}</label>`;
+        element.innerHTML = `<label class='consoleLog'>true<br>false</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');
@@ -76,7 +76,7 @@ console.log(arr.find(function (s) {
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${arr.find(function (s) {return s.toLowerCase() === s;})}<br>${arr.find(function (s) {return s.toUpperCase() === s;})}</label>`;
+        element.innerHTML = `<label class='consoleLog'>pear<br>undefined</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');
@@ -115,7 +115,7 @@ console.log(arr.findIndex(function (s) {
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${arr.findIndex(function (s) {return s.toLowerCase() === s;})}<br>${arr.findIndex(function (s) {return s.toUpperCase() === s;})}</label>`;
+        element.innerHTML = `<label class='consoleLog'>1<br>-1</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

@@ -68,7 +68,7 @@ console.log(arr); // [1, 2, 10, 20]
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${arr}</label>`;
+        element.innerHTML = `<label class='consoleLog'>1,2,10,20</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

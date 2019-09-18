@@ -235,7 +235,7 @@ console.log(x);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('log');
+    const element = document.querySelector('p#log');
     try {
         // 打印变量x
         var x = 100;
@@ -243,7 +243,7 @@ console.log(x);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${x}</label>`;
+        element.innerHTML = `<label class='consoleLog'>100</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');
@@ -287,7 +287,7 @@ console.log(abc);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('strictMode');
+    const element = document.querySelector('p#strictMode');
     try {
         'use strict';
         // 如果浏览器支持strict模式，
@@ -297,7 +297,7 @@ console.log(abc);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${abc}</label>`;
+        element.innerHTML = `<label class='consoleLog'>Hello, world</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

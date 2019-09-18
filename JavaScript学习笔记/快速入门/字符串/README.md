@@ -65,7 +65,7 @@ console.log(`多行
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('multiLineString');
+    const element = document.querySelector('p#multiLineString');
     try {
         // 如果浏览器不支持ES6，将报SyntaxError错误:
         console.log(`多行\n字符串\n测试`);
@@ -113,7 +113,7 @@ console.log(`你好, ${name}, 你今年${age}岁了!`);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('templateString');
+    const element = document.querySelector('p#templateString');
     try {
         'use strict';
         // 如果浏览器支持模板字符串，将会替换字符串内部的变量:
@@ -123,7 +123,7 @@ console.log(`你好, ${name}, 你今年${age}岁了!`);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>` + `你好, ${name}, 你今年${age}岁了!` + `</label>`;
+        element.innerHTML = `<label class='consoleLog'>你好, 小明, 你今年20岁了!</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

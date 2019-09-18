@@ -19,7 +19,7 @@ console.log('你的浏览器支持Map和Set！');
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('supportMapAndSet');
+    const element = document.querySelector('p#mapAndSet');
     try {
         'use strict';
         var m = new Map();
@@ -36,7 +36,7 @@ console.log('你的浏览器支持Map和Set！');
         element.innerHTML = `<label class='consoleError'>${e}</label>`;
     }
 })();">Run</button>
-<p id="supportMapAndSet" hidden></p>
+<p id="mapAndSet" hidden></p>
 
 ### Map
 <font color="red"><code>Map</code></font>是一组键值对的结构，具有极快的查找速度。

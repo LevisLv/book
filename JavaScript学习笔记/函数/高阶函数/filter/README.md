@@ -71,7 +71,7 @@ console.log(r.toString());
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${r.toString()}</label>`;
+        element.innerHTML = `<label class='consoleLog'>apple,strawberry,banana,pear,orange</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

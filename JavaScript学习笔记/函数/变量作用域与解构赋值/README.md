@@ -67,7 +67,7 @@ foo();
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('var');
+    const element = document.querySelector('p#var');
     try {
         'use strict';
         function foo() {
@@ -182,7 +182,7 @@ alert('又可以用alert()了!');
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('alert');
+    const element = document.querySelector('p#alert');
     try {
         'use strict';
         window.alert('调用window.alert()');
@@ -302,7 +302,7 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('destructuringAssignment');
+    const element = document.querySelector('p#destructuringAssignment');
     try {
         'use strict';
         // 如果浏览器支持解构赋值就不会报错:
@@ -312,7 +312,7 @@ console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>x = ${x}, y = ${y}, z = ${z}</label>`;
+        element.innerHTML = `<label class='consoleLog'>x = hello, y = JavaScript, z = ES6</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');
@@ -358,7 +358,7 @@ console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('objectDestructuringAssignment');
+    const element = document.querySelector('p#objectDestructuringAssignment');
     try {
         'use strict';
         var person = {
@@ -374,7 +374,7 @@ console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>name = ${name}, age = ${age}, passport = ${passport}</label>`;
+        element.innerHTML = `<label class='consoleLog'>name = 小明, age = 20, passport = G-12345678</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

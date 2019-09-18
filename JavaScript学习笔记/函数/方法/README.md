@@ -201,7 +201,7 @@ console.log('count = ' + count); // 3
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('decorator');
+    const element = document.querySelector('p#decorator');
     try {
         'use strict';
         var count = 0;
@@ -218,7 +218,7 @@ console.log('count = ' + count); // 3
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>count = ${count}</label>`;
+        element.innerHTML = `<label class='consoleLog'>count = 3</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

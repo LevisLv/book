@@ -37,7 +37,7 @@ console.log(results);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${results}</label>`;
+        element.innerHTML = `<label class='consoleLog'>1,4,9,16,25,36,49,64,81</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');
@@ -221,7 +221,7 @@ console.log(r);
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('parseInt');
+    const element = document.querySelector('p#parseInt');
     try {
         'use strict';
         var arr = ['1', '2', '3'];
@@ -231,7 +231,7 @@ console.log(r);
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${r}</label>`;
+        element.innerHTML = `<label class='consoleLog'>1,NaN,NaN</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

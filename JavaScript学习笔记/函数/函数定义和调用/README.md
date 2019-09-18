@@ -339,7 +339,7 @@ console.log(max(15, 20));
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('max');
+    const element = document.querySelector('p#max');
     try {
         'use strict';
         function max(a, b) {
@@ -355,7 +355,7 @@ console.log(max(15, 20));
         element.classList.remove(['consoleError']);
         element.classList.add('consoleLog');
         element.removeAttribute('hidden');
-        element.innerHTML = `<label class='consoleLog'>${max(15, 20)}</label>`;
+        element.innerHTML = `<label class='consoleLog'>undefined</label>`;
     } catch (e) {
         element.classList.remove(['consoleLog']);
         element.classList.add('consoleError');

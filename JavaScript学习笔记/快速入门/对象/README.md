@@ -62,7 +62,7 @@ console.log(xiaoming.age); // undefined
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('undefined');
+    const element = document.querySelector('p#undefined');
     try {
         'use strict';
         var xiaoming = {

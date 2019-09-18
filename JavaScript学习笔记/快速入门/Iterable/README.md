@@ -20,7 +20,7 @@ console.log('你的浏览器支持for ... of');
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('supportForOf');
+    const element = document.querySelector('p#of');
     try {
         'use strict';
         var a = [1, 2, 3];
@@ -38,7 +38,7 @@ console.log('你的浏览器支持for ... of');
         element.innerHTML = `<label class='consoleError'>${e}</label>`;
     }
 })();">Run</button>
-<p id="supportForOf" hidden></p>
+<p id="of" hidden></p>
 
 用<font color="red"><code>for ... of</code></font>循环遍历集合，用法如下：
 
@@ -99,7 +99,7 @@ a.forEach(function (element, index, array) {
 ```
 
 <button class="run" onclick="(() => {
-    const element = document.getElementById('forEach');
+    const element = document.querySelector('p#forEach');
     try {
         'use strict';
         var a = ['A', 'B', 'C'];
