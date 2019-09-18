@@ -246,8 +246,13 @@ console.log(r);
 提示：参考[Array.prototype.map()的文档](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)。
 
 <button class="analyze" onclick="(() => {
-    this.setAttribute('hidden', 'hidden');
-    document.querySelector('dev#analyze').removeAttribute('hidden');
+    this.classList.remove('analyze');
+    this.classList.add('analyze-wait');
+    this.innerHTML = '请先思考60秒...'
+    setTimeout(() => {
+        this.setAttribute('hidden', 'hidden');
+        document.querySelector('dev#analyze').removeAttribute('hidden');
+    }, 60 * 1000);
 })();">原因分析</button>
 ### 
 
