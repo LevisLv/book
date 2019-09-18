@@ -16,9 +16,9 @@ var s2 = 3.14 * r2 * r2;
 var s3 = 3.14 * r3 * r3;
 ```
 
-当代码出现有规律的重复的时候，你就需要当心了，每次写<font color="red"><code>3.14 * x * x</code></font>不仅很麻烦，而且，如果要把<font color="red"><code>3.14</code></font>改成<font color="red"><code>3.14159265359</code></font>的时候，得全部替换。
+当代码出现有规律的重复的时候，你就需要当心了，每次写<font color="red"><code>3.14 \* x \* x</code></font>不仅很麻烦，而且，如果要把<font color="red"><code>3.14</code></font>改成<font color="red"><code>3.14159265359</code></font>的时候，得全部替换。
 
-有了函数，我们就不再每次写<font color="red"><code>s = 3.14 * x * x</code></font>，而是写成更有意义的函数调用<font color="red"><code>s = area_of_circle(x)</code></font>，而函数<font color="red"><code>area_of_circle</code></font>本身只需要写一次，就可以多次调用。
+有了函数，我们就不再每次写<font color="red"><code>s = 3.14 \* x \* x</code></font>，而是写成更有意义的函数调用<font color="red"><code>s = area_of_circle(x)</code></font>，而函数<font color="red"><code>area_of_circle</code></font>本身只需要写一次，就可以多次调用。
 
 基本上所有的高级语言都支持函数，JavaScript也不例外。JavaScript的函数不但是“头等公民”，而且可以像变量一样使用，具有非常强大的抽象能力。
 
@@ -27,17 +27,21 @@ var s3 = 3.14 * r3 * r3;
 
 计算数列的和，比如：<font color="red"><code>1 + 2 + 3 + ... + 100</code></font>，写起来十分不方便，于是数学家发明了求和符号∑，可以把<font color="red"><code>1 + 2 + 3 + ... + 100</code></font>记作：
 
-> 100<br>
-> <span style="font-size:3em">∑</span><span style="font-size:2em">n</span><br>
-> n=1<br>
+> 100
+> <br>
+> <span style="font-size:3em">∑</span><span style="font-size:2em">n</span>
+> <br>
+> n=1
 
 这种抽象记法非常强大，因为我们看到 ∑ 就可以理解成求和，而不是还原成低级的加法运算。
 
 而且，这种抽象记法是可扩展的，比如：
 
-> 100<br>
-> <span style="font-size:3em">∑</span><span style="font-size:2em">(n<sup>2</sup>+1)</span><br>
-> n=1<br>
+> 100
+> <br>
+> <span style="font-size:3em">∑</span><span style="font-size:2em">(n</span><span style="font-size:1.5em"><sup>2</sup></span><span style="font-size:2em">+1)</span>
+> <br>
+> n=1
 
 还原成加法运算就变成了：
 
