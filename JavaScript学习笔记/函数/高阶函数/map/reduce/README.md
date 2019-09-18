@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="../../../../static/css/button.css"/>
-<link rel="stylesheet" href="../../../../static/css/console.css"/>
+<link rel="stylesheet" href="../../../../../static/css/button.css"/>
+<link rel="stylesheet" href="../../../../../static/css/console.css"/>
 
 # map/reduce
 ---
