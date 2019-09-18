@@ -23,3 +23,4 @@
             * [map/reduce](JavaScript学习笔记/函数/高阶函数/map/reduce/README.md)
             * [filter](JavaScript学习笔记/函数/高阶函数/filter/README.md)
             * [sort](JavaScript学习笔记/函数/高阶函数/sort/README.md)
+            * [Array](JavaScript学习笔记/函数/高阶函数/Array/README.md)
