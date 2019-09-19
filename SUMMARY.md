@@ -26,3 +26,4 @@
             * [Array](JavaScript学习笔记/函数/高阶函数/Array/README.md)
         * [闭包](JavaScript学习笔记/函数/闭包/README.md)
         * [箭头函数](JavaScript学习笔记/函数/箭头函数/README.md)
+        * [generator](JavaScript学习笔记/函数/generator/README.md)
