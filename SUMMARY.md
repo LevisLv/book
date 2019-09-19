@@ -28,3 +28,4 @@
         * [箭头函数](JavaScript学习笔记/函数/箭头函数/README.md)
         * [generator](JavaScript学习笔记/函数/generator/README.md)
     * [标准对象](JavaScript学习笔记/标准对象/README.md)
+        * [Date](JavaScript学习笔记/标准对象/Date/README.md)
