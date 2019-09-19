@@ -232,11 +232,9 @@ if (sum() !== 0) {
 'use strict';
 function sum(...rest) {
     let result = 0;
-    if (Array.isArray(rest)) {
-        rest.forEach((item) => {
-            result += item;
-        });
-    }
+    rest.forEach(value => {
+        result += value;
+    });
     return result;
 }
 `;
@@ -296,10 +294,8 @@ function foo() {
 
 function area_of_circle(r, pi) {
     return 0;
-}
-```
 
-```javascript
+}
 // 测试:
 if (area_of_circle(2) === 12.56 && area_of_circle(2, 3.1416) === 12.5664) {
     console.log('测试通过');
@@ -312,8 +308,7 @@ if (area_of_circle(2) === 12.56 && area_of_circle(2, 3.1416) === 12.5664) {
     const answer = `
 'use strict';
 function area_of_circle(r, pi) {
-    pi = pi ? pi : 3.14;
-    return pi * r * r;
+    return (pi ? pi : 3.14) * Math.pow(r, 2);
 }
 `;
     alert(answer);
