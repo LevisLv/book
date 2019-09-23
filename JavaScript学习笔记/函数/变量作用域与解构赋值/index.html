@@ -371,9 +371,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.3.4.1" data-path="../高阶函数/map、reduce/">
+        <li class="chapter " data-level="2.1.3.4.1" data-path="../高阶函数/map/reduce/">
             
-                <a href="../高阶函数/map、reduce/">
+                <a href="../高阶函数/map/reduce/">
             
                     
                     map/reduce
@@ -384,8 +384,118 @@
             
         </li>
     
+        <li class="chapter " data-level="2.1.3.4.2" data-path="../高阶函数/filter/">
+            
+                <a href="../高阶函数/filter/">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.3" data-path="../高阶函数/sort/">
+            
+                <a href="../高阶函数/sort/">
+            
+                    
+                    sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.4" data-path="../高阶函数/Array/">
+            
+                <a href="../高阶函数/Array/">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../闭包/">
+            
+                <a href="../闭包/">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../箭头函数/">
+            
+                <a href="../箭头函数/">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../generator/">
+            
+                <a href="../generator/">
+            
+                    
+                    generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../标准对象/">
+            
+                <a href="../../标准对象/">
+            
+                    
+                    标准对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../标准对象/Date/">
+            
+                <a href="../../标准对象/Date/">
+            
+                    
+                    Date
+            
+                </a>
+            
+
             
         </li>
     
@@ -499,7 +609,7 @@ x = x + <span class="hljs-number">2</span>; <span class="hljs-comment">// Refere
 foo();
 </code></pre>
 <p><button class="run" onclick="(() =&gt; {
-    const element = document.getElementById(&apos;var&apos;);
+    const element = document.querySelector(&apos;p#var&apos;);
     try {
         &apos;use strict&apos;;
         function foo() {
@@ -593,7 +703,7 @@ alert(<span class="hljs-string">&apos;&#x65E0;&#x6CD5;&#x7528;alert()&#x663E;&#x
 alert(<span class="hljs-string">&apos;&#x53C8;&#x53EF;&#x4EE5;&#x7528;alert()&#x4E86;!&apos;</span>);
 </code></pre>
 <p><button class="run" onclick="(() =&gt; {
-    const element = document.getElementById(&apos;alert&apos;);
+    const element = document.querySelector(&apos;p#alert&apos;);
     try {
         &apos;use strict&apos;;
         window.alert(&apos;&#x8C03;&#x7528;window.alert()&apos;);
@@ -687,7 +797,7 @@ PI; <span class="hljs-comment">// 3.14</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;x = &apos;</span> + x + <span class="hljs-string">&apos;, y = &apos;</span> + y + <span class="hljs-string">&apos;, z = &apos;</span> + z);
 </code></pre>
 <p><button class="run" onclick="(() =&gt; {
-    const element = document.getElementById(&apos;destructuringAssignment&apos;);
+    const element = document.querySelector(&apos;p#destructuringAssignment&apos;);
     try {
         &apos;use strict&apos;;
         // &#x5982;&#x679C;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x89E3;&#x6784;&#x8D4B;&#x503C;&#x5C31;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;:
@@ -697,7 +807,7 @@ PI; <span class="hljs-comment">// 3.14</span>
         element.classList.remove([&apos;consoleError&apos;]);
         element.classList.add(&apos;consoleLog&apos;);
         element.removeAttribute(&apos;hidden&apos;);
-        element.innerHTML = `&lt;label class=&apos;consoleLog&apos;&gt;x = ${x}, y = ${y}, z = ${z}&lt;/label&gt;`;
+        element.innerHTML = `&lt;label class=&apos;consoleLog&apos;&gt;x = hello, y = JavaScript, z = ES6&lt;/label&gt;`;
     } catch (e) {
         element.classList.remove([&apos;consoleLog&apos;]);
         element.classList.add(&apos;consoleError&apos;);
@@ -733,7 +843,7 @@ z; <span class="hljs-comment">// &apos;ES6&apos;</span>
 <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;name = &apos;</span> + name + <span class="hljs-string">&apos;, age = &apos;</span> + age + <span class="hljs-string">&apos;, passport = &apos;</span> + passport);
 </code></pre>
 <p><button class="run" onclick="(() =&gt; {
-    const element = document.getElementById(&apos;objectDestructuringAssignment&apos;);
+    const element = document.querySelector(&apos;p#objectDestructuringAssignment&apos;);
     try {
         &apos;use strict&apos;;
         var person = {
@@ -749,7 +859,7 @@ z; <span class="hljs-comment">// &apos;ES6&apos;</span>
         element.classList.remove([&apos;consoleError&apos;]);
         element.classList.add(&apos;consoleLog&apos;);
         element.removeAttribute(&apos;hidden&apos;);
-        element.innerHTML = `&lt;label class=&apos;consoleLog&apos;&gt;name = ${name}, age = ${age}, passport = ${passport}&lt;/label&gt;`;
+        element.innerHTML = `&lt;label class=&apos;consoleLog&apos;&gt;name = &#x5C0F;&#x660E;, age = 20, passport = G-12345678&lt;/label&gt;`;
     } catch (e) {
         element.classList.remove([&apos;consoleLog&apos;]);
         element.classList.add(&apos;consoleError&apos;);
@@ -884,7 +994,7 @@ single; <span class="hljs-comment">// true</span>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"变量作用域与解构赋值","level":"2.1.3.2","depth":3,"next":{"title":"方法","level":"2.1.3.3","depth":3,"path":"JavaScript学习笔记/函数/方法/README.md","ref":"JavaScript学习笔记/函数/方法/README.md","articles":[]},"previous":{"title":"函数定义和调用","level":"2.1.3.1","depth":3,"path":"JavaScript学习笔记/函数/函数定义和调用/README.md","ref":"JavaScript学习笔记/函数/函数定义和调用/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/函数/变量作用域与解构赋值/README.md","mtime":"2019-09-11T02:34:40.405Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-17T10:11:10.944Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"变量作用域与解构赋值","level":"2.1.3.2","depth":3,"next":{"title":"方法","level":"2.1.3.3","depth":3,"path":"JavaScript学习笔记/函数/方法/README.md","ref":"JavaScript学习笔记/函数/方法/README.md","articles":[]},"previous":{"title":"函数定义和调用","level":"2.1.3.1","depth":3,"path":"JavaScript学习笔记/函数/函数定义和调用/README.md","ref":"JavaScript学习笔记/函数/函数定义和调用/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"night","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/函数/变量作用域与解构赋值/README.md","mtime":"2019-09-18T02:33:24.401Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-23T11:30:43.687Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

@@ -371,9 +371,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.3.4.1" data-path="高阶函数/map、reduce/">
+        <li class="chapter " data-level="2.1.3.4.1" data-path="高阶函数/map/reduce/">
             
-                <a href="高阶函数/map、reduce/">
+                <a href="高阶函数/map/reduce/">
             
                     
                     map/reduce
@@ -384,8 +384,118 @@
             
         </li>
     
+        <li class="chapter " data-level="2.1.3.4.2" data-path="高阶函数/filter/">
+            
+                <a href="高阶函数/filter/">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.3" data-path="高阶函数/sort/">
+            
+                <a href="高阶函数/sort/">
+            
+                    
+                    sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.4" data-path="高阶函数/Array/">
+            
+                <a href="高阶函数/Array/">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="闭包/">
+            
+                <a href="闭包/">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="箭头函数/">
+            
+                <a href="箭头函数/">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="generator/">
+            
+                <a href="generator/">
+            
+                    
+                    generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../标准对象/">
+            
+                <a href="../标准对象/">
+            
+                    
+                    标准对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../标准对象/Date/">
+            
+                <a href="../标准对象/Date/">
+            
+                    
+                    Date
+            
+                </a>
+            
+
             
         </li>
     
@@ -456,23 +566,27 @@
 <span class="hljs-keyword">var</span> s2 = <span class="hljs-number">3.14</span> * r2 * r2;
 <span class="hljs-keyword">var</span> s3 = <span class="hljs-number">3.14</span> * r3 * r3;
 </code></pre>
-<p>&#x5F53;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x6709;&#x89C4;&#x5F8B;&#x7684;&#x91CD;&#x590D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x5C31;&#x9700;&#x8981;&#x5F53;&#x5FC3;&#x4E86;&#xFF0C;&#x6BCF;&#x6B21;&#x5199;<font color="red"><code>3.14  x  x</code></font>&#x4E0D;&#x4EC5;&#x5F88;&#x9EBB;&#x70E6;&#xFF0C;&#x800C;&#x4E14;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x628A;<font color="red"><code>3.14</code></font>&#x6539;&#x6210;<font color="red"><code>3.14159265359</code></font>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F97;&#x5168;&#x90E8;&#x66FF;&#x6362;&#x3002;</p>
-<p>&#x6709;&#x4E86;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x518D;&#x6BCF;&#x6B21;&#x5199;<font color="red"><code>s = 3.14  x  x</code></font>&#xFF0C;&#x800C;&#x662F;&#x5199;&#x6210;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;<font color="red"><code>s = area_of_circle(x)</code></font>&#xFF0C;&#x800C;&#x51FD;&#x6570;<font color="red"><code>area_of_circle</code></font>&#x672C;&#x8EAB;&#x53EA;&#x9700;&#x8981;&#x5199;&#x4E00;&#x6B21;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x5F53;&#x4EE3;&#x7801;&#x51FA;&#x73B0;&#x6709;&#x89C4;&#x5F8B;&#x7684;&#x91CD;&#x590D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x5C31;&#x9700;&#x8981;&#x5F53;&#x5FC3;&#x4E86;&#xFF0C;&#x6BCF;&#x6B21;&#x5199;<font color="red"><code>3.14 * x * x</code></font>&#x4E0D;&#x4EC5;&#x5F88;&#x9EBB;&#x70E6;&#xFF0C;&#x800C;&#x4E14;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x628A;<font color="red"><code>3.14</code></font>&#x6539;&#x6210;<font color="red"><code>3.14159265359</code></font>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F97;&#x5168;&#x90E8;&#x66FF;&#x6362;&#x3002;</p>
+<p>&#x6709;&#x4E86;&#x51FD;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x518D;&#x6BCF;&#x6B21;&#x5199;<font color="red"><code>s = 3.14 * x * x</code></font>&#xFF0C;&#x800C;&#x662F;&#x5199;&#x6210;&#x66F4;&#x6709;&#x610F;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;<font color="red"><code>s = area_of_circle(x)</code></font>&#xFF0C;&#x800C;&#x51FD;&#x6570;<font color="red"><code>area_of_circle</code></font>&#x672C;&#x8EAB;&#x53EA;&#x9700;&#x8981;&#x5199;&#x4E00;&#x6B21;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x8C03;&#x7528;&#x3002;</p>
 <p>&#x57FA;&#x672C;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x9AD8;&#x7EA7;&#x8BED;&#x8A00;&#x90FD;&#x652F;&#x6301;&#x51FD;&#x6570;&#xFF0C;JavaScript&#x4E5F;&#x4E0D;&#x4F8B;&#x5916;&#x3002;JavaScript&#x7684;&#x51FD;&#x6570;&#x4E0D;&#x4F46;&#x662F;&#x201C;&#x5934;&#x7B49;&#x516C;&#x6C11;&#x201D;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x50CF;&#x53D8;&#x91CF;&#x4E00;&#x6837;&#x4F7F;&#x7528;&#xFF0C;&#x5177;&#x6709;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#x7684;&#x62BD;&#x8C61;&#x80FD;&#x529B;&#x3002;</p>
 <h3 id="&#x62BD;&#x8C61;"><a name="&#x62BD;&#x8C61;" class="plugin-anchor" href="#&#x62BD;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62BD;&#x8C61;</h3>
 <p>&#x62BD;&#x8C61;&#x662F;&#x6570;&#x5B66;&#x4E2D;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
 <p>&#x8BA1;&#x7B97;&#x6570;&#x5217;&#x7684;&#x548C;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<font color="red"><code>1 + 2 + 3 + ... + 100</code></font>&#xFF0C;&#x5199;&#x8D77;&#x6765;&#x5341;&#x5206;&#x4E0D;&#x65B9;&#x4FBF;&#xFF0C;&#x4E8E;&#x662F;&#x6570;&#x5B66;&#x5BB6;&#x53D1;&#x660E;&#x4E86;&#x6C42;&#x548C;&#x7B26;&#x53F7;&#x2211;&#xFF0C;&#x53EF;&#x4EE5;&#x628A;<font color="red"><code>1 + 2 + 3 + ... + 100</code></font>&#x8BB0;&#x4F5C;&#xFF1A;</p>
 <blockquote>
-<p>100<br>
-<span style="font-size:3em">&#x2211;</span><span style="font-size:2em">n</span><br>
-n=1<br></p>
+<p>100
+<br>
+<span style="font-size:3em">&#x2211;</span><span style="font-size:2em">n</span>
+<br>
+n=1</p>
 </blockquote>
 <p>&#x8FD9;&#x79CD;&#x62BD;&#x8C61;&#x8BB0;&#x6CD5;&#x975E;&#x5E38;&#x5F3A;&#x5927;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x770B;&#x5230; &#x2211; &#x5C31;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x6210;&#x6C42;&#x548C;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8FD8;&#x539F;&#x6210;&#x4F4E;&#x7EA7;&#x7684;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x3002;</p>
 <p>&#x800C;&#x4E14;&#xFF0C;&#x8FD9;&#x79CD;&#x62BD;&#x8C61;&#x8BB0;&#x6CD5;&#x662F;&#x53EF;&#x6269;&#x5C55;&#x7684;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
 <blockquote>
-<p>100<br>
-<span style="font-size:3em">&#x2211;</span><span style="font-size:2em">(n<sup>2</sup>+1)</span><br>
-n=1<br></p>
+<p>100
+<br>
+<span style="font-size:3em">&#x2211;</span><span style="font-size:2em">(n</span><span style="font-size:1.5em"><sup>2</sup></span><span style="font-size:2em">+1)</span>
+<br>
+n=1</p>
 </blockquote>
 <p>&#x8FD8;&#x539F;&#x6210;&#x52A0;&#x6CD5;&#x8FD0;&#x7B97;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#xFF1A;</p>
 <blockquote>
@@ -524,7 +638,7 @@ n=1<br></p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"函数","level":"2.1.3","depth":2,"next":{"title":"函数定义和调用","level":"2.1.3.1","depth":3,"path":"JavaScript学习笔记/函数/函数定义和调用/README.md","ref":"JavaScript学习笔记/函数/函数定义和调用/README.md","articles":[]},"previous":{"title":"Iterable","level":"2.1.2.8","depth":3,"path":"JavaScript学习笔记/快速入门/Iterable/README.md","ref":"JavaScript学习笔记/快速入门/Iterable/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/函数/README.md","mtime":"2019-09-10T03:06:53.840Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-17T10:11:10.944Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数","level":"2.1.3","depth":2,"next":{"title":"函数定义和调用","level":"2.1.3.1","depth":3,"path":"JavaScript学习笔记/函数/函数定义和调用/README.md","ref":"JavaScript学习笔记/函数/函数定义和调用/README.md","articles":[]},"previous":{"title":"Iterable","level":"2.1.2.8","depth":3,"path":"JavaScript学习笔记/快速入门/Iterable/README.md","ref":"JavaScript学习笔记/快速入门/Iterable/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"night","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/函数/README.md","mtime":"2019-09-18T03:14:18.527Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-23T11:30:43.687Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
