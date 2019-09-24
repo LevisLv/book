@@ -29,3 +29,4 @@
         * [generator](JavaScript学习笔记/函数/generator/README.md)
     * [标准对象](JavaScript学习笔记/标准对象/README.md)
         * [Date](JavaScript学习笔记/标准对象/Date/README.md)
+        * [RegExp](JavaScript学习笔记/标准对象/RegExp/README.md)
