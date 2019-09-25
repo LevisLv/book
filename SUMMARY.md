@@ -30,3 +30,4 @@
     * [标准对象](JavaScript学习笔记/标准对象/README.md)
         * [Date](JavaScript学习笔记/标准对象/Date/README.md)
         * [RegExp](JavaScript学习笔记/标准对象/RegExp/README.md)
+        * [JSON](JavaScript学习笔记/标准对象/JSON/README.md)
