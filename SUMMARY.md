@@ -33,4 +33,4 @@
         * [JSON](JavaScript学习笔记/标准对象/JSON/README.md)
     * [面向对象编程](JavaScript学习笔记/面向对象编程/README.md)
         * [创建对象](JavaScript学习笔记/面向对象编程/创建对象/README.md)
-
+        * [原型继承](JavaScript学习笔记/面向对象编程/原型继承/README.md)
