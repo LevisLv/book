@@ -34,3 +34,4 @@
     * [面向对象编程](JavaScript学习笔记/面向对象编程/README.md)
         * [创建对象](JavaScript学习笔记/面向对象编程/创建对象/README.md)
         * [原型继承](JavaScript学习笔记/面向对象编程/原型继承/README.md)
+        * [class继承](JavaScript学习笔记/面向对象编程/class继承/README.md)
