@@ -1,0 +1,867 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>原型继承 · LevisLv</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="LevisLv">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-click-reveal/click_reveal.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../class继承/" />
+    
+    
+    <link rel="prev" href="../创建对象/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://www.levislv.com/" target="_blank" class="custom-link">我的主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    JavaScript学习笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../JavaScript简介/">
+            
+                <a href="../../JavaScript简介/">
+            
+                    
+                    JavaScript简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../快速入门/">
+            
+                <a href="../../快速入门/">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../快速入门/基本语法/">
+            
+                <a href="../../快速入门/基本语法/">
+            
+                    
+                    基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../快速入门/数据类型和变量/">
+            
+                <a href="../../快速入门/数据类型和变量/">
+            
+                    
+                    数据类型和变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../快速入门/字符串/">
+            
+                <a href="../../快速入门/字符串/">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../快速入门/数组/">
+            
+                <a href="../../快速入门/数组/">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../快速入门/对象/">
+            
+                <a href="../../快速入门/对象/">
+            
+                    
+                    对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../快速入门/循环/">
+            
+                <a href="../../快速入门/循环/">
+            
+                    
+                    循环
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../快速入门/Map和Set/">
+            
+                <a href="../../快速入门/Map和Set/">
+            
+                    
+                    Map和Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.8" data-path="../../快速入门/Iterable/">
+            
+                <a href="../../快速入门/Iterable/">
+            
+                    
+                    Iterable
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../函数/">
+            
+                <a href="../../函数/">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.1" data-path="../../函数/函数定义和调用/">
+            
+                <a href="../../函数/函数定义和调用/">
+            
+                    
+                    函数定义和调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.2" data-path="../../函数/变量作用域与解构赋值/">
+            
+                <a href="../../函数/变量作用域与解构赋值/">
+            
+                    
+                    变量作用域与解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.3" data-path="../../函数/方法/">
+            
+                <a href="../../函数/方法/">
+            
+                    
+                    方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4" data-path="../../函数/高阶函数/">
+            
+                <a href="../../函数/高阶函数/">
+            
+                    
+                    高阶函数
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.3.4.1" data-path="../../函数/高阶函数/map/reduce/">
+            
+                <a href="../../函数/高阶函数/map/reduce/">
+            
+                    
+                    map/reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.2" data-path="../../函数/高阶函数/filter/">
+            
+                <a href="../../函数/高阶函数/filter/">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.3" data-path="../../函数/高阶函数/sort/">
+            
+                <a href="../../函数/高阶函数/sort/">
+            
+                    
+                    sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.4.4" data-path="../../函数/高阶函数/Array/">
+            
+                <a href="../../函数/高阶函数/Array/">
+            
+                    
+                    Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.5" data-path="../../函数/闭包/">
+            
+                <a href="../../函数/闭包/">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.6" data-path="../../函数/箭头函数/">
+            
+                <a href="../../函数/箭头函数/">
+            
+                    
+                    箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3.7" data-path="../../函数/generator/">
+            
+                <a href="../../函数/generator/">
+            
+                    
+                    generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../标准对象/">
+            
+                <a href="../../标准对象/">
+            
+                    
+                    标准对象
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.4.1" data-path="../../标准对象/Date/">
+            
+                <a href="../../标准对象/Date/">
+            
+                    
+                    Date
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.2" data-path="../../标准对象/RegExp/">
+            
+                <a href="../../标准对象/RegExp/">
+            
+                    
+                    RegExp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4.3" data-path="../../标准对象/JSON/">
+            
+                <a href="../../标准对象/JSON/">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    面向对象编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.5.1" data-path="../创建对象/">
+            
+                <a href="../创建对象/">
+            
+                    
+                    创建对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.5.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    原型继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5.3" data-path="../class继承/">
+            
+                <a href="../class继承/">
+            
+                    
+                    class继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >原型继承</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head></head><body><h1 id="&#x539F;&#x578B;&#x96C6;&#x6210;"><a name="&#x539F;&#x578B;&#x96C6;&#x6210;" class="plugin-anchor" href="#&#x539F;&#x578B;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x539F;&#x578B;&#x96C6;&#x6210;</h1>
+<hr>
+<p>&#x5728;&#x4F20;&#x7EDF;&#x7684;&#x57FA;&#x4E8E;Class&#x7684;&#x8BED;&#x8A00;&#x5982;Java&#x3001;C++&#x4E2D;&#xFF0C;&#x7EE7;&#x627F;&#x7684;&#x672C;&#x8D28;&#x662F;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5DF2;&#x6709;&#x7684;Class&#xFF0C;&#x5E76;&#x751F;&#x6210;&#x65B0;&#x7684;Subclass&#x3002;</p>
+<p>&#x7531;&#x4E8E;&#x8FD9;&#x7C7B;&#x8BED;&#x8A00;&#x4E25;&#x683C;&#x533A;&#x5206;&#x7C7B;&#x548C;&#x5B9E;&#x4F8B;&#xFF0C;&#x7EE7;&#x627F;&#x5B9E;&#x9645;&#x4E0A;&#x662F;&#x7C7B;&#x578B;&#x7684;&#x6269;&#x5C55;&#x3002;&#x4F46;&#x662F;&#xFF0C;JavaScript&#x7531;&#x4E8E;&#x91C7;&#x7528;&#x539F;&#x578B;&#x7EE7;&#x627F;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x6269;&#x5C55;&#x4E00;&#x4E2A;Class&#xFF0C;&#x56E0;&#x4E3A;&#x6839;&#x672C;&#x4E0D;&#x5B58;&#x5728;Class&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x529E;&#x6CD5;&#x8FD8;&#x662F;&#x6709;&#x7684;&#x3002;&#x6211;&#x4EEC;&#x5148;&#x56DE;&#x987E;<font color="red"><code>Student</code></font>&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = props.name || <span class="hljs-string">&apos;Unnamed&apos;</span>;
+}
+
+Student.prototype.hello = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+}
+</code></pre>
+<p>&#x4EE5;&#x53CA;<font color="red"><code>Student</code></font>&#x7684;&#x539F;&#x578B;&#x94FE;&#xFF1A;</p>
+<p><a href="https://www.liaoxuefeng.com/files/attachments/1034288810160288/l" data-lightbox="cb0961a6-46ea-4463-aa82-f48b826a2743" data-title="" target="_blank"><img src="https://www.liaoxuefeng.com/files/attachments/1034288810160288/l" alt=""></a></p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x57FA;&#x4E8E;<font color="red"><code>Student</code></font>&#x6269;&#x5C55;&#x51FA;<font color="red"><code>PrimaryStudent</code></font>&#xFF0C;&#x53EF;&#x4EE5;&#x5148;&#x5B9A;&#x4E49;&#x51FA;<font color="red"><code>PrimaryStudent</code></font>&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">PrimaryStudent</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-comment">// &#x8C03;&#x7528;Student&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7ED1;&#x5B9A;this&#x53D8;&#x91CF;:</span>
+    Student.call(<span class="hljs-keyword">this</span>, props);
+    <span class="hljs-keyword">this</span>.grade = props.grade || <span class="hljs-number">1</span>;
+}
+</code></pre>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x8C03;&#x7528;&#x4E86;<font color="red"><code>Student</code></font>&#x6784;&#x9020;&#x51FD;&#x6570;&#x4E0D;&#x7B49;&#x4E8E;&#x7EE7;&#x627F;&#x4E86;<font color="red"><code>Student</code></font>&#xFF0C;<font color="red"><code>PrimaryStudent</code></font>&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x662F;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; <span class="hljs-built_in">Object</span>.prototype ----&gt; <span class="hljs-literal">null</span>
+</code></pre>
+<p>&#x5FC5;&#x987B;&#x60F3;&#x529E;&#x6CD5;&#x628A;&#x539F;&#x578B;&#x94FE;&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Student.prototype ----&gt; <span class="hljs-built_in">Object</span>.prototype ----&gt; <span class="hljs-literal">null</span>
+</code></pre>
+<p>&#x8FD9;&#x6837;&#xFF0C;&#x539F;&#x578B;&#x94FE;&#x5BF9;&#x4E86;&#xFF0C;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x5C31;&#x5BF9;&#x4E86;&#x3002;&#x65B0;&#x7684;&#x57FA;&#x4E8E;<font color="red"><code>PrimaryStudent</code></font>&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x4E0D;&#x4F46;&#x80FD;&#x8C03;&#x7528;<font color="red"><code>PrimaryStudent.prototype</code></font>&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<font color="red"><code>Student.prototype</code></font>&#x5B9A;&#x4E49;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x7528;&#x6700;&#x7B80;&#x5355;&#x7C97;&#x66B4;&#x7684;&#x65B9;&#x6CD5;&#x8FD9;&#x4E48;&#x5E72;&#xFF1A;</p>
+<pre><code class="lang-javascript">PrimaryStudent.prototype = Student.prototype;
+</code></pre>
+<p>&#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF01;&#x5982;&#x679C;&#x8FD9;&#x6837;&#x7684;&#x8BDD;&#xFF0C;<font color="red"><code>PrimaryStudent</code></font>&#x548C;<font color="red"><code>Student</code></font>&#x5171;&#x4EAB;&#x4E00;&#x4E2A;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x8FD8;&#x8981;&#x5B9A;&#x4E49;<font color="red"><code>PrimaryStudent</code></font>&#x5E72;&#x5565;&#xFF1F;</p>
+<p>&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x501F;&#x52A9;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x5BF9;&#x8C61;&#x6765;&#x5B9E;&#x73B0;&#x6B63;&#x786E;&#x7684;&#x539F;&#x578B;&#x94FE;&#xFF0C;&#x8FD9;&#x4E2A;&#x4E2D;&#x95F4;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x8981;&#x6307;&#x5411;<font color="red"><code>Student.prototype</code></font>&#x3002;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x53C2;&#x8003;&#x9053;&#x7237;&#xFF08;&#x5C31;&#x662F;&#x53D1;&#x660E;JSON&#x7684;&#x90A3;&#x4E2A;&#x9053;&#x683C;&#x62C9;&#x65AF;&#xFF09;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4E2D;&#x95F4;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x7A7A;&#x51FD;&#x6570;<font color="red"><code>F</code></font>&#x6765;&#x5B9E;&#x73B0;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// PrimaryStudent&#x6784;&#x9020;&#x51FD;&#x6570;:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">PrimaryStudent</span>(<span class="hljs-params">props</span>) </span>{
+    Student.call(<span class="hljs-keyword">this</span>, props);
+    <span class="hljs-keyword">this</span>.grade = props.grade || <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-comment">// &#x7A7A;&#x51FD;&#x6570;F:</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">F</span>(<span class="hljs-params"></span>) </span>{
+}
+
+<span class="hljs-comment">// &#x628A;F&#x7684;&#x539F;&#x578B;&#x6307;&#x5411;Student.prototype:</span>
+F.prototype = Student.prototype;
+
+<span class="hljs-comment">// &#x628A;PrimaryStudent&#x7684;&#x539F;&#x578B;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x65B0;&#x7684;F&#x5BF9;&#x8C61;&#xFF0C;F&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x6B63;&#x597D;&#x6307;&#x5411;Student.prototype:</span>
+PrimaryStudent.prototype = <span class="hljs-keyword">new</span> F();
+
+<span class="hljs-comment">// &#x628A;PrimaryStudent&#x539F;&#x578B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4FEE;&#x590D;&#x4E3A;PrimaryStudent:</span>
+PrimaryStudent.prototype.constructor = PrimaryStudent;
+
+<span class="hljs-comment">// &#x7EE7;&#x7EED;&#x5728;PrimaryStudent&#x539F;&#x578B;&#xFF08;&#x5C31;&#x662F;new F()&#x5BF9;&#x8C61;&#xFF09;&#x4E0A;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#xFF1A;</span>
+PrimaryStudent.prototype.getGrade = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.grade;
+};
+
+<span class="hljs-comment">// &#x521B;&#x5EFA;xiaoming:</span>
+<span class="hljs-keyword">var</span> xiaoming = <span class="hljs-keyword">new</span> PrimaryStudent({
+    name: <span class="hljs-string">&apos;&#x5C0F;&#x660E;&apos;</span>,
+    grade: <span class="hljs-number">2</span>
+});
+xiaoming.name; <span class="hljs-comment">// &apos;&#x5C0F;&#x660E;&apos;</span>
+xiaoming.grade; <span class="hljs-comment">// 2</span>
+
+<span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x539F;&#x578B;:</span>
+xiaoming.__proto__ === PrimaryStudent.prototype; <span class="hljs-comment">// true</span>
+xiaoming.__proto__.__proto__ === Student.prototype; <span class="hljs-comment">// true</span>
+
+<span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x7EE7;&#x627F;&#x5173;&#x7CFB;:</span>
+xiaoming <span class="hljs-keyword">instanceof</span> PrimaryStudent; <span class="hljs-comment">// true</span>
+xiaoming <span class="hljs-keyword">instanceof</span> Student; <span class="hljs-comment">// true</span>
+</code></pre>
+<p>&#x7528;&#x4E00;&#x5F20;&#x56FE;&#x6765;&#x8868;&#x793A;&#x65B0;&#x7684;&#x539F;&#x578B;&#x94FE;&#xFF1A;</p>
+<p><a href="https://www.liaoxuefeng.com/files/attachments/1034288859918112/l" data-lightbox="de50860b-d868-481b-b256-fdd19ad3781c" data-title="" target="_blank"><img src="https://www.liaoxuefeng.com/files/attachments/1034288859918112/l" alt=""></a></p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x51FD;&#x6570;<font color="red"><code>F</code></font>&#x4EC5;&#x7528;&#x4E8E;&#x6865;&#x63A5;&#xFF0C;&#x6211;&#x4EEC;&#x4EC5;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;<font color="red"><code>new F()</code></font>&#x5B9E;&#x4F8B;&#xFF0C;&#x800C;&#x4E14;&#xFF0C;&#x6CA1;&#x6709;&#x6539;&#x53D8;&#x539F;&#x6709;&#x7684;<font color="red"><code>Student</code></font>&#x5B9A;&#x4E49;&#x7684;&#x539F;&#x578B;&#x94FE;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x628A;&#x7EE7;&#x627F;&#x8FD9;&#x4E2A;&#x52A8;&#x4F5C;&#x7528;&#x4E00;&#x4E2A;<font color="red"><code>inherits()</code></font>&#x51FD;&#x6570;&#x5C01;&#x88C5;&#x8D77;&#x6765;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x9690;&#x85CF;<font color="red"><code>F</code></font>&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x7B80;&#x5316;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inherits</span>(<span class="hljs-params">Child, Parent</span>) </span>{
+    <span class="hljs-keyword">var</span> F = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{};
+    F.prototype = Parent.prototype;
+    Child.prototype = <span class="hljs-keyword">new</span> F();
+    Child.prototype.constructor = Child;
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;<font color="red"><code>inherits()</code></font>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x590D;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Student</span>(<span class="hljs-params">props</span>) </span>{
+    <span class="hljs-keyword">this</span>.name = props.name || <span class="hljs-string">&apos;Unnamed&apos;</span>;
+}
+
+Student.prototype.hello = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    alert(<span class="hljs-string">&apos;Hello, &apos;</span> + <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;!&apos;</span>);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">PrimaryStudent</span>(<span class="hljs-params">props</span>) </span>{
+    Student.call(<span class="hljs-keyword">this</span>, props);
+    <span class="hljs-keyword">this</span>.grade = props.grade || <span class="hljs-number">1</span>;
+}
+
+<span class="hljs-comment">// &#x5B9E;&#x73B0;&#x539F;&#x578B;&#x7EE7;&#x627F;&#x94FE;:</span>
+inherits(PrimaryStudent, Student);
+
+<span class="hljs-comment">// &#x7ED1;&#x5B9A;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x5230;PrimaryStudent&#x539F;&#x578B;:</span>
+PrimaryStudent.prototype.getGrade = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.grade;
+};
+</code></pre>
+<h3 id="&#x5C0F;&#x7ED3;"><a name="&#x5C0F;&#x7ED3;" class="plugin-anchor" href="#&#x5C0F;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5C0F;&#x7ED3;</h3>
+<p>JavaScript&#x7684;&#x539F;&#x578B;&#x7EE7;&#x627F;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#xFF1A;</p>
+<ol>
+<li>&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x5728;&#x5185;&#x90E8;&#x7528;<font color="red"><code>call()</code></font>&#x8C03;&#x7528;&#x5E0C;&#x671B;&#x201C;&#x7EE7;&#x627F;&#x201D;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x7ED1;&#x5B9A;<font color="red"><code>this</code></font>&#xFF1B;</li>
+<li>&#x501F;&#x52A9;&#x4E2D;&#x95F4;&#x51FD;&#x6570;<font color="red"><code>F</code></font>&#x5B9E;&#x73B0;&#x539F;&#x578B;&#x94FE;&#x7EE7;&#x627F;&#xFF0C;&#x6700;&#x597D;&#x901A;&#x8FC7;&#x5C01;&#x88C5;&#x7684;<font color="red"><code>inherits</code></font>&#x51FD;&#x6570;&#x5B8C;&#x6210;&#xFF1B;</li>
+<li>&#x7EE7;&#x7EED;&#x5728;&#x65B0;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#x4E0A;&#x5B9A;&#x4E49;&#x65B0;&#x65B9;&#x6CD5;&#x3002;</li>
+</ol>
+</body></html>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../创建对象/" class="navigation navigation-prev " aria-label="Previous page: 创建对象">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../class继承/" class="navigation navigation-next " aria-label="Next page: class继承">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"原型继承","level":"2.1.5.2","depth":3,"next":{"title":"class继承","level":"2.1.5.3","depth":3,"path":"JavaScript学习笔记/面向对象编程/class继承/README.md","ref":"JavaScript学习笔记/面向对象编程/class继承/README.md","articles":[]},"previous":{"title":"创建对象","level":"2.1.5.1","depth":3,"path":"JavaScript学习笔记/面向对象编程/创建对象/README.md","ref":"JavaScript学习笔记/面向对象编程/创建对象/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus","-sharing","sharing-plus","anchors","back-to-top-button","click-reveal","custom-favicon","code","expandable-chapters","github","hide-element","lightbox","multipart","pageview-count","popup","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/LevisLv/"},"splitter":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"popup":{},"multipart":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"night","family":"sans","size":2},"click-reveal":{},"highlight":{},"favicon":"static/img/favicon.ico","lightbox":{"jquery":true},"back-to-top-button":{},"pageview-count":{},"custom-favicon":{},"sharing":{"all":["douban","facebook","google","instapaper","linkedin","twitter","weibo","messenger","qq","qzone","viber","whatsapp"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"LevisLv","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LevisLv","language":"zh-hans","links":{"sidebar":{"我的主页":"https://www.levislv.com/"}},"gitbook":"3.2.3","description":"个人电子书"},"file":{"path":"JavaScript学习笔记/面向对象编程/原型继承/README.md","mtime":"2019-10-10T09:37:03.002Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-13T02:19:36.383Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-click-reveal/click_reveal.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
